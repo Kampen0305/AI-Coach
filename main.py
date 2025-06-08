@@ -14,11 +14,14 @@ HEADERS = {
 
 # --- Functie: Advies opvragen via OpenRouter ---
 def vraag_ai_advies(vak, niveau, doel):
+    """Genereer advies waarbij digitale didactiek en Bloom centraal staan."""
+
     prompt = (
-        f"Ik geef les in het vak {vak} op niveau {niveau}."
-        f" Hoe kan ik AI inzetten om het volgende doel te behalen: {doel}?"
-        " Geef een concrete suggestie voor een AI-toepassing, een prompt die ik kan gebruiken,"
-        " en een praktische werkvorm."
+        f"Ik geef les in het vak {vak} op niveau {niveau}. "
+        f"Ik wil een les ontwerpen volgens digitale didactiek en de taxonomie van Bloom. "
+        f"Mijn doel is: {doel}. "
+        "Geef een concrete AI-toepassing, een voorbeeldprompt en een praktische werkvorm. "
+        "Koppel je advies aan de verschillende niveaus van Bloom."
     )
 
     data = {
